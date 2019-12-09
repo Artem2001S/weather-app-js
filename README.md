@@ -1,7 +1,7 @@
 # weather-app-js
 
 - [Task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/fancy-weather.md)
-- [Demo](http)
+- [Demo](https://weather-rss.netlify.com/)
 1. Clone this repo
 2. ``cd .\fancy-weather\``
 3. ``npm i`` - to install dependecies
