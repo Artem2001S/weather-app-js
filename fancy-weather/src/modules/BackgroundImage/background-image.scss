@@ -1,0 +1,13 @@
+.change-bg {
+  padding: 10px;
+  cursor: pointer;
+  &__icon {
+    width: 25px;
+    cursor: pointer;
+    transition: none;
+    &:hover {
+      transition: transform 1s;
+      transform: rotate(360deg);
+    }
+  }
+}

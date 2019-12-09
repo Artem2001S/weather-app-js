@@ -1,0 +1,66 @@
+.temperature-control-container {
+  display: flex;
+  position: relative;
+  justify-content: stretch;
+  overflow: hidden;
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  background: rgba(8, 80, 236, 0.8);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 100%;
+    background: white;
+  }
+
+  &__btn {
+    display: block;
+    background: transparent;
+    border: 0;
+    font-weight: 600;
+    width: 50px;
+    height: 100%;
+    color: #eeeeee;
+    font-size: 1.8rem;
+
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba($color: white, $alpha: 1);
+      background: rgb(7, 51, 145);
+    }
+  }
+}
+
+.active-el {
+  position: absolute;
+  top: 0;
+  background: rgba(121, 149, 207, 0.8);
+  box-shadow: inset 0px -1px 10px 10px rgba(0, 65, 196, 0.3);
+  width: 50px;
+  height: 100%;
+}
+
+@keyframes toLeft {
+  from {
+    right: 0;
+  }
+  to {
+    right: 50px;
+  }
+}
+
+@keyframes toRight {
+  from {
+    right: 50px;
+
+  }
+  to {
+    right: 0;
+  }
+}

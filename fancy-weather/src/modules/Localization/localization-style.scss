@@ -1,0 +1,29 @@
+.langs {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  background: rgb(114, 112, 112);
+  &__select {
+    padding: 10px;
+    background: rgb(114, 112, 112);
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: #eeeeee;
+    font-weight: 600;
+    font-size: 1.6rem;
+
+    &-option {
+      cursor: pointer;
+      outline: none;
+      background: rgb(114, 112, 112);
+      color: #eeeeee;
+      padding: 10px;
+      white-space: normal;
+      font-size: 1.6rem;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}

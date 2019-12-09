@@ -1,0 +1,135 @@
+.search {
+  position: relative;
+  order: 1;
+  &__input {
+    display: block;
+    padding-left: 0.8rem;
+    padding-right: 130px;
+
+    border: 2px solid rgba($color: #e4e3e3, $alpha: 0.3);
+    border-radius: 8px;
+    width: 330px;
+    height: 41px;
+    font-size: 1.8rem;
+    background: rgba($color: #4c5255, $alpha: 0.5);
+    outline: none;
+    color: #e4e3e3;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100px;
+    height: 100%;
+
+    outline: none;
+    border: 0;
+    text-transform: uppercase;
+    border-left-width: 0px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    font-size: 1.7rem;
+    font-weight: 600;
+    background: rgba($color: #aeb5b9, $alpha: 0.5);
+    letter-spacing: 1px;
+    color: #eeeeee;
+    cursor: pointer;
+    transition: background-color 0.6s;
+    &:hover {
+      background: rgba($color: #4c5255, $alpha: 0.3);
+    }
+  }
+
+  &__microphone {
+    position: absolute;
+    top: calc(50% - 9px);
+    right: 110px;
+
+    cursor: pointer;
+    transition: backgrund-color 1s;
+    &_active {
+      background: linear-gradient(45deg, crimson, rgb(44, 253, 44));
+      background-position: 0 0;
+      padding: 20px;
+      top: -10px;
+      border-radius: 50%;
+      animation: gradient 1s ease infinite alternate-reverse, animateMicrophoneTop 2s ease infinite;
+    }
+
+    &:hover {
+      animation: animateMicrophone 2s linear infinite;
+    }
+  }
+
+  @media (max-width: 471px) {
+    margin-top: 15px;
+  }
+
+  @media (max-width: 375px) {
+    &__input {
+      width: 280px;
+      padding-right: 115px;
+    }
+
+    &__btn {
+      width: 85px;
+      font-size: 1.6rem;
+    }
+
+    &__microphone {
+      right: 95px;
+    }
+  }
+}
+
+@keyframes animateMicrophone {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(30deg);
+  }
+
+  50% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes animateMicrophoneTop {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(5px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 56px;
+  }
+  100% {
+    opacity: 1;
+    background-position: 0% 0%;
+  }
+}

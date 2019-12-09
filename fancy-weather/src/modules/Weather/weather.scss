@@ -1,0 +1,105 @@
+.weather-widget {
+  display: flex;
+  flex-direction: column;
+}
+
+.current-day {
+  display: flex;
+  flex-direction: column;
+}
+
+.another-days {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 807px) {
+    align-items: center;
+    justify-content: center;
+    & div {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.temperature {
+  font-size: 6.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 3rem;
+  &_small {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  &_smallest {
+    margin: 0;
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+
+  @media (max-width: 637px) {
+    font-size: 5.5rem;
+  }
+
+  @media (max-width: 450px) {
+    margin-top: 5rem;
+  }
+}
+
+.current-weather-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+  @media (max-width: 637px) {
+    margin-top: 2rem;
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  @media (max-width: 450px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.weather-parameters {
+  margin-left: 5rem;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 40px;
+  & div:nth-child(2) {
+    font-size: 35px;
+  }
+  @media (max-width: 637px) {
+    font-size: 2.2rem;
+
+    div:nth-child(2) {
+      font-size: 3.3rem;
+    }
+  }
+}
+
+.day-of-week {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+
+.weather-card {
+  margin-left: 3rem;
+  &__temperature-info {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  &__avg-temperature {
+    display: flex;
+    margin-top: 2.5rem;
+    align-items: center;
+  }
+}
