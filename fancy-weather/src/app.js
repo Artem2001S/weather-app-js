@@ -13,7 +13,7 @@ const app = document.querySelector('.application');
 let geoInfo = {};
 
 const darkSkyKey = 'f623cba9ef61d6ec94bebb38cd8e5427';
-const unsplashClientId = 'b2d7444553e47f531a6a08bc2b4a31b5967d429fadc524e327439a28a53f61f3';
+const unsplashClientId = '45947ee41bcdbe0f5b1dc053db93703bda2bc4cb931799a09821d1a74a829b15';
 YandexMaps.init();
 
 Utils.createPreloader();
